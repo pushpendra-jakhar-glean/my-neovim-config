@@ -2,7 +2,7 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
-vim.keymap.set("n", "<leader>sT", function()
+vim.keymap.set("n", "<leader>sx", function()
   Snacks.picker.grep({
     exclude = {
       "javatests/**",
