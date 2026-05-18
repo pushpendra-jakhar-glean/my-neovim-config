@@ -7,7 +7,7 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       diagnostics = {
-        virtual_text = false,
+        virtual_text = true,
         signs = true,
         underline = true,
       },
@@ -16,7 +16,7 @@ return {
       },
       setup = {
         jdtls = function()
-          return true -- disable lspconfig jdtls, ftplugin handles it
+          return true
         end,
       },
     },
