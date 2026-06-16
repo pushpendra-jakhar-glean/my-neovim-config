@@ -34,14 +34,14 @@ local config = {
     "-jar",
     vim.fn.glob(mason_path .. "/plugins/org.eclipse.equinox.launcher_*.jar"),
     "-configuration",
-    mason_path .. "/config_mac",
+    mason_path .. "/config_mac_arm",
     "-data",
     workspace_dir,
   },
   root_dir = root_dir,
   settings = {
     java = {
-      autobuild = { enabled = false },
+      autobuild = { enabled = true },
       configuration = {
         runtimes = {
           {
